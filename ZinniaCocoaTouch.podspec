@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => "MIT" }
   s.author             = { "huangpeng" => "huangpeng@chunyu.me" }
   s.platform     = :ios, "6.0"
-  s.source       = { :git => "https://github.com/hpsoar/iOS-Zinnia-Japanese-Handwriting-Input.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/hpsoar/iOS-Zinnia-Japanese-Handwriting-Input.git", :branch => 'develop' }
   s.source_files  = "ZinniaCocoaTouch", "ZinniaCocoaTouch/**/*.{h,m,cpp}"
 #s.resources = "Resources/*.{png}"
 

@@ -19,6 +19,11 @@ Pod::Spec.new do |s|
   s.source_files  = "ZinniaCocoaTouch", "ZinniaCocoaTouch/**/*.{h,m,cpp}"
 #s.resources = "Resources/*.{png}"
 
+  s.library = 'c++'
+  s.xcconfig = {
+    'CLANG_CXX_LIBRARY' => 'libc++',
+    "GCC_PREPROCESSOR_DEFINITIONS" => '$(inherited) HAVE_CONFIG_H=1' 
+  }
 #s.prefix_header_file = "Classes/CYViewLib-PrefixHeader.pch"
 
 end
